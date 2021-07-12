@@ -1,0 +1,141 @@
+ @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded');
+
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Encode Sans Semi Expanded', sans-serif;}
+
+/*========= UNIVERSAL =========*/
+.titlePage {width: 100%; padding: 30px 5%; background-color: rgb(48, 48, 48); color: #FFF; font-size: 1.5em; text-transform: uppercase;}
+.topLogo {width: 100%; background-color: #000; padding: 30px 0 25px 0;}
+.topLogo figure {width: 90px; margin: 0 auto;}
+.topLogo figure img {width: 100%;}
+
+/*========= HEADER =========*/
+#header {width: 100%; height: auto;}
+#header .networkTop {width: 100%; height: 35px; background-color: rgb(3, 84, 122);}
+#header .networkTop figure {width: auto; float: right; margin-right: 5%;}
+#header .networkTop figure img {width: 20px; margin: 8px 0 0 10px;}
+#header .btnMenu {width: 40px; height: 40px; position: absolute; z-index: 2; border: none; margin-top: 100px; right: 5%; cursor: pointer; background-color: transparent;}
+#header .btnMenu img {width: 100%;}
+#header .contentMenu {width: 0; height: 100%; position: fixed; background-color: rgba(0, 0, 0, .9); z-index: 2; right: 0; transition: 0.2s; overflow-x: hidden;}
+#header .contentMenu .logoMenu {width: 100%; float: left; padding: 30px 0;}
+#header .contentMenu .logoMenu .btnCloseMenu {font-size: 2.5em; margin-left: 5%; color: rgba(255, 255, 255, .7); margin-top: 10px; background-color: transparent; border: none; cursor: pointer;}
+#header .contentMenu .logoMenu a img {width: 60px; float: right; margin-right: 30px;}
+#header .contentMenu .menu {width: 100%; float: left;}
+#header .contentMenu .menu a {display: block; line-height: 50px; text-transform: uppercase; margin: 0 5%;}
+#header .contentMenu .menu a:hover {color: rgb(207, 207, 207);}
+#header .contentMenu .networkMenu {width: 100%; text-align: center; padding: 30px 0; float: left;}
+#header .contentMenu .networkMenu figure a img {margin: 0 10px;}
+
+/*==================================== PAGE - INDEX ====================================*/
+#slideshow {max-width: 100%; background-color: #000;}
+#slideshow .slide {width: 100%;}
+#slideshow .slide img {width: 100%;}
+#fade {-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;}
+@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
+@keyframes fade {from {opacity: .4} to {opacity: 1}}
+#phraseSpace {width: 100%; float: left; background-color: #000; padding: 80px 0; display: block;}
+#phraseSpace .space {width: 100%; float: left;}
+#phraseSpace .space:nth-child(2) {margin-top: 50px; text-align: center;}
+#phraseSpace .space blockquote p {color: rgb(86, 179, 209); font-size: 2em; margin: 0 5%;}
+#phraseSpace .space blockquote span {color: rgb(40, 120, 147); float: left; margin: 30px 0 0 5%; font-size: 1.2em;}
+#phraseSpace .space img {width: 130px; margin: 0 5%;}
+#spaceVideo {width: 100%; height: 600px; float: left;}
+
+/*==================================== PAGE - PHOTOS ====================================*/
+.pgPhotosContent {width: 100%; background-color: #000; padding-bottom: 80px; float: left;}
+.pgPhotosContent .album {width: 90%; margin: 80px auto 0 auto;}
+.pgPhotosContent .album .albumImage {width: 100%; margin-top: 10px;}
+.pgPhotosContent .album .albumImage {width: 100%;}
+.pgPhotosContent .album .albumImage img {width: 100%;}
+.pgPhotosContent .album .albumImage:hover {opacity: 0.8; cursor: pointer;}
+.pgPhotosContent .backgroundImage {width: 100%; height: 100%; top: 0; left: 0; position: fixed; z-index: 100; background-color: rgba(0, 0, 0, .7); display: none;}
+.pgPhotosContent .backgroundImage img {width: 90%; left: calc(30% - 25%); position: absolute; top: 50%; transform: translate(0, -50%);}
+
+/*==================================== PAGE - VIDEOS ====================================*/
+.pgVideosContent {width: 100%; padding-bottom: 70px; float: left; background-color: #000;}
+.pgVideosContent .mainVideo {width: 100%; float: left;}
+.pgVideosContent h1 {width: 100%; text-align: center; color: #FFF; padding: 60px 0; float: left;}
+.pgVideosContent .videos {width: 100%; float: left;}
+.pgVideosContent .videos .video {width: 90%; height: 350px; margin: 0 auto 10px auto;}
+
+/*==================================== PAGE - DISCOGRAPHY ====================================*/
+.pgDiscographyContent {width: 100%; float: left; background-color: #000;}
+.pgDiscographyContent .musicAlbums {width: 100%; padding: 80px 0; float: left;}
+.pgDiscographyContent .musicAlbums .musicAlbum {width: 100%;}
+.pgDiscographyContent .musicAlbums .musicAlbum:hover {cursor: pointer;}
+.pgDiscographyContent .musicAlbums .musicAlbum img {width: 100%; float: left; filter: grayscale(50%); transition: 1s; -webkit-filter: grayscale(100%);}
+.pgDiscographyContent .musicAlbums .musicAlbum img:hover {filter: grayscale(0%);}
+.pgDiscographyContent .albumInfo {width: 100%; height: 100%; top: 0; left: 0; position: fixed; z-index: 100; background-color: rgba(0, 0, 0, .8); display: none;}
+.pgDiscographyContent .albumInfo .infoBox {width: 90%; height: 80%; overflow: auto; left: calc(30% - 25%); position: absolute; top: 10%; transform: translate(0, 0%); background-color: rgba(0, 0, 0, .8);}
+.pgDiscographyContent .albumInfo .infoBox figure {width: 100%;}
+.pgDiscographyContent .albumInfo .infoBox figure img {width: 100%;}
+.pgDiscographyContent .albumInfo .infoBox .musicBox {width: 100%; height: 50%; overflow: auto;}
+.pgDiscographyContent .albumInfo .infoBox .musicBox h3 {color: #FFF; padding: 10px 30px; background-color: rgb(171, 147, 133); font-size: .9em;}
+.pgDiscographyContent .albumInfo .infoBox .musicBox h3 span {font-size: .7em;}
+.pgDiscographyContent .albumInfo .infoBox .musicBox ul li a {width: 100%; padding: 10px 30px; display: block; color: #FFF; font-size: .8em;}
+.pgDiscographyContent .albumInfo .infoBox .musicBox ul li a:hover {background-color: rgba(134, 134, 134, .6);}
+
+/*==================================== PAGE - BIOGRAPHY ====================================*/
+.pgBiographyContent {width: 100%; background-color: #000; float: left;}
+.pgBiographyContent .banner {width: 100%; height: 500px; background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/wallpaper4.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.pgBiographyContent .textBio {width: 100%; padding: 80px 5%; float: left;}
+.pgBiographyContent h1 {width: 100%; padding: 30px 5%; background-color: rgb(48, 48, 48); color: #FFF; font-size: 1.5em;}
+.pgBiographyContent .textBio .textContent {width: 100%;}
+.pgBiographyContent .textBio .textContent p {color: #FFF; text-align: justify; line-height: 30px;}
+.pgBiographyContent .textBio figure {width: 90%; margin: 40px auto 0 auto;}
+.pgBiographyContent .textBio figure img {width: 100%; }
+
+/*========= FOOTER =========*/
+#footer {width: 100%; float: left; padding: 80px 0 10px 0; background-image: url(../images/wallpaperFooter.jpg); background-repeat: no-repeat; background-size: cover;}
+#footer .logo {width: 200px; height: 115px; margin: 0 auto;}
+#footer .logo img {width: 45%; float: left;}
+#footer .menuNetwork {width: 100%; margin-top: 30px;}
+#footer .menuNetwork .menuFooter {text-align: center; line-height: 25px; padding: 0 5%;}
+#footer .menuNetwork .menuFooter a {text-transform: uppercase; color: #FFF; text-decoration: none;}
+#footer .menuNetwork .spaceLinks {margin-left: 30px;}
+#footer .menuNetwork .networkFooter {text-align: center; margin-top: 30px;}
+#footer .menuNetwork .networkFooter img {width: 28px; margin-right: 10px;}
+#footer #copyright {width: 100%; float: left; margin-top: 60px; text-align: center;}
+#footer #copyright p, a {color: rgba(255, 255, 255, .6); text-decoration: none;}
+
+/*==================================== RESPONSIVE ====================================*/
+@media screen and (min-width: 480px) {
+	.pgDiscographyContent .musicAlbums .musicAlbum {width:5 0%; float: left;}
+	.pgDiscographyContent .albumInfo .infoBox {width: 435px; left: 50%; margin-left: -217px;}
+	.pgBiographyContent .textBio figure {width: 400px;}
+}
+@media screen and (min-width: 640px) {
+	.pgPhotosContent .album .albumImage {width: 48%; float: left; margin-left: 1%;}
+	.pgPhotosContent .album .albumImage:nth-child(odd) {margin-right: 1%;}
+}
+@media screen and (min-width: 700px) {
+	.pgDiscographyContent .musicAlbums .musicAlbum {width: 33%;}
+	#header .networkTop figure {margin-right: 10%;}
+	#header .btnMenu {margin-right: 5%;}
+	#footer .logo {margin-left: 5%; float: left;}
+	#footer .menuNetwork {width: 60%; float: right; margin-top: 0;}
+	#footer .menuNetwork .menuFooter, #footer .menuNetwork .networkFooter {padding: 0; margin-right: 5%;}
+}
+@media screen and (min-width: 800px) {
+	.pgPhotosContent .album .albumImage {width: 32%;}
+	.pgPhotosContent .album .albumImage:nth-child(odd) {margin-right: 0;}
+	.pgVideosContent .videos .video {width: 44%; float: left; margin-right: 2%;}
+	.pgVideosContent .videos .video:nth-child(odd) {margin-left: 5%;}
+}
+@media screen and (min-width: 980px) {
+	#phraseSpace .space {width: 50%;}
+	#phraseSpace .space blockquote p {margin: 0 0 0 20%;}
+	#phraseSpace .space:nth-child(2) {margin-top: 27px;}
+	#phraseSpace .space blockquote span {margin: 30px 0 0 20%;}
+	.pgDiscographyContent .musicAlbums .musicAlbum {width: 25%;}
+	#footer .logo {margin-left: 10%;}
+	#footer .menuNetwork .menuFooter, #footer .menuNetwork .networkFooter {margin-right: 10%;}
+}
+@media screen and (min-width: 1024px) {
+	.pgPhotosContent .album .albumImage {width: 24%;}
+	.pgBiographyContent .textBio .textContent {width: 50%; float: left;}
+	.pgBiographyContent .textBio figure {width: 400px; float: right; margin: 100px 0 0 0;}
+}
+@media screen and (min-width: 1280px) {
+	.pgVideosContent .videos .video {height: 400px;}
+	.pgBiographyContent .textBio img {width: 500px;}
+}
